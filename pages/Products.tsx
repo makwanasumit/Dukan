@@ -105,6 +105,6 @@ export const getServerSideProps = (async () => {
   const a = await fetch('http://localhost:1337/api/products?populate=*', { headers: headers })
   const product = await a.json()
   // Pass data to the page via props
-  return { props: { product: product } }
+  return { props: {product: product } }
 })
 export default Products
