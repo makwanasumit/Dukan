@@ -36,6 +36,7 @@ html,body {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .item-container img{
@@ -57,6 +58,13 @@ html,body {
     border-top: 1px solid #00000032;
 }
 
+
+
+.hovergray:hover{
+    background-color: #61616132;
+}
+
+
 .like-img img:hover{
-    background-color: red;
+    overflow: hidden;
 }
