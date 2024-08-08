@@ -19,6 +19,12 @@ const config: Config = {
       },
       width:{
         'item-container': '300',
+      },
+      fontFamily: {
+        'lobster': ['Lobster', 'cursive'],
+        'roboto': ['Roboto', 'sans-serif'],
+        
+        
       }
     },
   },

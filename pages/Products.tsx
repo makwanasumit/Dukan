@@ -3,45 +3,7 @@ import Link from 'next/link';
 
 const Products = (props: any) => {
   return (
-    // <div className='container mx-auto px-4'>
-    //   <section className="text-gray-600 body-font">
-    //     <div className="container px-5 py-24 mx-auto h-full">
-    //       <div className="flex flex-wrap w-full mb-20">
-    //         <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-    //           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Product List - Dukan </h1>
-    //           <div className="h-1 w-20 bg-indigo-500 rounded"></div>
-    //         </div>
-    //         <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus esse quod debitis hic dolore, optio doloribus porro natus adipisci quam magni autem unde, illum repellat! Ipsam facilis iste voluptatibus id illo sunt ut sequi! Veniam maiores iusto deleniti aperiam necessitatibus. Ea dolorem suscipit exercitationem nisi.</p>
-    //       </div>
-    //       <div className="flex flex-row -m-4 w-full flex-wrap">
-
-
-    //       </div>
-    //     </div>
-    //     <div className="w-full flex flex-wrap h-screen ">
-    //         {props.product.data.map((item:any)=>{
-    //           {console.log(item)}
-    //           let imageURL;
-    //             if(item.attributes.image.data.attributes.url){
-    //               imageURL="http://localhost:1337"+item.attributes.image.data.attributes.url
-    //             }
-    //           return(
-
-    //               <div className="xl:w-1/4 md:w-1/2 p-4">
-    //               <div className=" bg-gray-100 p-6 rounded-lg ">
-    //                 <img width={200} height={200} className="rounded w-full object-cover object-center mb-6" src={item.attributes.image.data.attributes.url && imageURL} alt="content"/>
-    //                 <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">{item.attributes.slug}</h3>
-    //                 <h2 className="text-lg text-gray-900 font-medium title-font mb-4">{item.attributes.title}</h2>
-    //                 <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-    //               </div>
-    //             </div>
-
-    //         )
-    //         })}
-    //       </div>
-    //   </section>
-    // </div>
-
+  
 
     <div className='h-full w-full'>
       <div className='products-heading flex justify-between items-center px-7 sm:flex-row md:flex-row flex-wrap grow'>

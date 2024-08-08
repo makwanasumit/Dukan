@@ -7,16 +7,31 @@ import Footer from "@/components/Footer";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Head from "next/head";
 import Script from "next/script";
+import Link from "next/link";
+import {Lobster} from "next/font/google";
 
 
+
+const lobster_init = Lobster({
+  weight: '400', 
+  subsets: ['latin'],
+  variable: '--font-lobster',
+
+})
 
 export default function App({ Component, pageProps }: AppProps) {
+  <Head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
+    
+  </Head>
 
   useEffect(() => {
     console.log("I am useeffect from app.js")
   }, [])
   const [cart, setcart] = useState([])
   const [reloadKey, setreloadKey] = useState(1)
+
+
 
 
 
@@ -49,9 +64,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      
+
       <Nav cart={cart} key={reloadKey} />
-      <Component cart={cart} clearCart={clearCart} removeFromCart={removeFromCart} addToCart={addToCart} {...pageProps} />
+      <Component className={lobster_init.className} cart={cart} clearCart={clearCart} removeFromCart={removeFromCart} addToCart={addToCart} {...pageProps} />
       <Footer />
     </>
   )
